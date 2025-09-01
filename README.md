@@ -1,4 +1,4 @@
-### Enigma Simulartor
+# Enigma Simulartor
 A simple Python implementation of the Enigma encryption machine
 
 First run the file `todayslrotorlgenerator.py`
