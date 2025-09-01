@@ -1,6 +1,7 @@
 import random
+import pickle
 
-alphabet = "abcdefghijklmnopqrctuvwxyz"
+alphabet = "abcdefghijklmnopqrstuvwxyz"
 
 # This is rotors
 
@@ -15,3 +16,7 @@ r2 = "".join(r2)
 r3 = list(alphabet)
 random.shuffle(r3)
 r3 = "".join(r3)
+
+f = open("./todays_rotor_state.enigma", "wb")
+pickle.dump((r1, r2, r3), f)
+f.close()
